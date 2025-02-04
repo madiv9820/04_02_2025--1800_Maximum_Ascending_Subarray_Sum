@@ -18,11 +18,9 @@ public:
             // Inner loop: Check subsequent elements to see if they form an ascending sequence
             for(int j = i + 1; j < n; ++j) {
                 // If the current element is greater than the previous one, continue adding to the sum
-                if(nums[j] > nums[j - 1]) 
-                    current_Ascending_Sum += nums[j];
+                if(nums[j] > nums[j - 1]) current_Ascending_Sum += nums[j];
                 // If the sequence is no longer ascending, break out of the inner loop
-                else 
-                    break;
+                else break;
             }
 
             // Update the maximum ascending sum if the current ascending sum is greater
